@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sammy E-Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sammy E-Shop</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-  <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
+  <body>
     <!-- start navbar here -->
     <nav class="navbar">
       <div class="navbar-center">
         <span class="navbar-icon">
           <i class="fas fa-bars"></i>
         </span>
-    
+
         <div class="cart-button">
           <span class="navbar-icon">
             <i class="fas fa-cart-plus"></i>
@@ -37,7 +39,91 @@
       </div>
     </header>
     <!-- end hero here -->
-  <script src="app.js"></script>
-</body>
 
+    <!-- start products here -->
+    <section class="products">
+      <div class="section-title">
+        <h2 class="">our Houses</h2>
+      </div>
+      <div class="products-center">
+        <!-- start single products here -->
+        <article class="product">
+          <div class="img-container">
+            <img
+              src="./images/prod-1.jpeg"
+              alt="product"
+              class="product-img"
+            />
+            <button class="bag-btn" data-id="1">
+              <i class="fas fa-shopping-cart"></i>
+              add to bag
+            </button>
+          </div>
+          <h3>queen bed</h3>
+          <h4>$890</h4>
+        </article>
+        <!-- end single products here -->
+
+        <!-- start single products here -->
+        <article class="product">
+          <div class="img-container">
+            <img
+              src="./images/prod-2.jpeg"
+              alt="product"
+              class="product-img"
+            />
+            <button class="bag-btn" data-id="1">
+              <i class="fas fa-shopping-cart"></i>
+              add to bag
+            </button>
+          </div>
+          <h3>queen bed</h3>
+          <h4>$890</h4>
+        </article>
+        <!-- end single products here -->
+
+        <!-- start single products here -->
+        <article class="product">
+          <div class="img-container">
+            <img
+              src="./images/prod-3.jpeg"
+              alt="product"
+              class="product-img"
+            />
+            <button class="bag-btn" data-id="1">
+              <i class="fas fa-shopping-cart"></i>
+              add to bag
+            </button>
+          </div>
+          <h3>queen bed</h3>
+          <h4>$890</h4>
+        </article>
+        <!-- end single products here -->
+
+        <!-- start single products here -->
+        <article class="product">
+          <div class="img-container">
+            <img
+              src="./images/prod-6.jpeg"
+              alt="product"
+              class="product-img"
+            />
+            <button class="bag-btn" data-id="1">
+              <i class="fas fa-shopping-cart"></i>
+              add to bag
+            </button>
+          </div>
+          <h3>queen bed</h3>
+          <h4>$890</h4>
+        </article>
+        <!-- end single products here -->
+
+        <!-- start cart here -->
+      </div>
+      <div class="cart-overlay"></div>
+      <!-- end cart here -->
+    </section>
+    <!-- end products here -->
+    <script src="app.js"></script>
+  </body>
 </html>
