@@ -169,7 +169,7 @@ class Storage {
     return localStorage.getItem("cart")
       ? JSON.parse(localStorage.getItem("cart"))
       : [];
-      dndncdc d cd cc d c s cd csd cd cds c
+     
   }
 }
 
