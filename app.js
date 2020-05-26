@@ -46,7 +46,7 @@ class UI {
             <img src=${product.image} alt="product" class="product-img">
             <button class="bag-btn" data-id=${product.id}>
               <i class="fas fa-shopping-cart"></i>
-              add to bag
+              add to cart
             </button>
           </div>
           <h3>${product.title}</h3>
@@ -146,10 +146,25 @@ class UI {
   clearCart() {
     let cartItems = cart.map((item) => item.id);
     cartItems.forEach((id) => this.removeItem(id));
+    // remore cart from the DOM
+    console.log(cartContent);
+    while (cartContent.children.length > 0) {
+      cartContent.removeChild(cartContent.children[0]);
+    }
+    //hide the cart
+    this.hideCart();
   }
 
   removeItem(id) {
     cart = cart.filter((item) => item.id !== id);
+    this.setCartValues(cart);
+    Storage.saveCart(cart);
+    let button = this.getSingleButton(id);
+    button.disabled = false;
+    button.innerHTML = `<i class="fas fa shopping-cart"></i>add to cart`;
+  }
+  getSingleButton(id) {
+    return buttonsDom.find((button) => button.dataset.id === id);
   }
 }
 
@@ -169,7 +184,6 @@ class Storage {
     return localStorage.getItem("cart")
       ? JSON.parse(localStorage.getItem("cart"))
       : [];
-     
   }
 }
 
