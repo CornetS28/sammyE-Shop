@@ -42,7 +42,7 @@
         "image": {
           "fields": {
             "file": {
-              "url": "./images/product-3.jpeg"
+              "url": "./images/prod-3.jpeg"
             }
           }
         }
@@ -58,7 +58,7 @@
         "image": {
           "fields": {
             "file": {
-              "url": "./images/product-4.jpeg"
+              "url": "./images/prod-4.jpeg"
             }
           }
         }
@@ -74,7 +74,7 @@
         "image": {
           "fields": {
             "file": {
-              "url": "./images/product-5.jpeg"
+              "url": "./images/prod-5.jpeg"
             }
           }
         }
@@ -90,7 +90,7 @@
         "image": {
           "fields": {
             "file": {
-              "url": "./images/product-6.jpeg"
+              "url": "./images/prod-6.jpeg"
             }
           }
         }
@@ -106,7 +106,7 @@
         "image": {
           "fields": {
             "file": {
-              "url": "./images/product-7.jpeg"
+              "url": "./images/prod-7.jpeg"
             }
           }
         }
@@ -122,7 +122,7 @@
         "image": {
           "fields": {
             "file": {
-              "url": "./images/product-8.jpeg"
+              "url": "./images/prod-8.jpeg"
             }
           }
         }
