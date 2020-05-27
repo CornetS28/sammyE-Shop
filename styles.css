@@ -39,6 +39,15 @@ body {
   justify-content: space-between;
   padding: 0 1.5rem;
 }
+
+.logo {
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainBlack);
+  font-size: 1.5rem;
+}
+.logo span {
+   color: var(--primaryColor);
+}
 .navbar-icon {
   font-size: 1.5rem;
 }
@@ -177,7 +186,7 @@ body {
   transition: var(--mainTransition);
   background: rgba(130, 243, 200, 0.5);
   z-index: 2;
-  visibility: hidden; 
+  visibility: hidden;
 }
 .cart {
   position: fixed;
